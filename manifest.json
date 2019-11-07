@@ -5,28 +5,19 @@
   "description": "Sleep is important, so you should go the f*ck to sleep. Like now. Find it hard to remember to go to sleep or when it's the time to go to sleep rolls round you aren't sleepy? Download NOW! -GTFTS",
   "content_scripts": [
     {
-      "matches": ["https://www.youtube.com/*"],
-      "js": ["./main.js"]
+      "matches": ["<all_urls>"],
+      "js": ["titleTabs.js"]
     }
   ],
 
-  "browser_action": {
-    //"default_icon": "tab-icon",
-    "default_title": "AYOOOO CATCH SOME ZZZS!"
-  },
+  
+  "permissions": [
+    "<all_urls>",
+    "tabs"
+  ],
 
-  
-  "chrome_url_overrides": {
-    //"newtab": "newtab.html"
-  },
-
-  
-  "permissions": ["activeTab"],
-  
-  "css": ["index.css"],
   "icons": {
     "48": "icons/sleep-icon-48.png"
   }
-
   
 }
