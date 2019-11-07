@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Go The F*ck To Sleep",
+  "version": "1.0",
+  "description": "Sleep is important, so you should go the f*ck to sleep. Like now. Find it hard to remember to go to sleep or when it's the time to go to sleep rolls round you aren't sleepy? Download NOW! -GTFTS",
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["./main.js"]
+    }
+  ],
+  // do jquery shit here?
+  "css": ["index.css"],
+  "icons": {
+    "48": "icons/sleep-icon-48.png"
+  }
+}
