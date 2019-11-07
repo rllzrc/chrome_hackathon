@@ -9,9 +9,24 @@
       "js": ["./main.js"]
     }
   ],
-  // do jquery shit here?
+
+  "browser_action": {
+    //"default_icon": "tab-icon",
+    "default_title": "AYOOOO CATCH SOME ZZZS!"
+  },
+
+  
+  "chrome_url_overrides": {
+    //"newtab": "newtab.html"
+  },
+
+  
+  "permissions": ["activeTab"],
+  
   "css": ["index.css"],
   "icons": {
     "48": "icons/sleep-icon-48.png"
   }
+
+  
 }
